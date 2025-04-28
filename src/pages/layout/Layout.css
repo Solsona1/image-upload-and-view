@@ -1,0 +1,57 @@
+#app-page {
+    height: 100%;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+#app-page main {
+    --header-height: calc(1rem + 1rem + 16pt + 1px);
+    height: 100%;
+    padding-top: var(--header-height);
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tablets */
+@media(min-width: 768px) {
+    #app-page header h1 {
+        font-size: 19pt;
+    }
+    #app-page main {
+        --header-height: calc(1rem + 1rem + 19pt + 1px);
+    }
+}
+
+/* Notebooks */
+@media(min-width: 1366px) {
+    #app-page header a {
+        width: 100%;
+    }
+    #app-page header h1 {
+        font-size: 20pt;
+    }
+    #app-page main {
+        --header-height: calc(1rem + 1rem + 20pt + 1px);
+    }
+}
+
+/* Desktops */
+@media(min-width: 1920px) {
+    #app-page header a {
+        width: 100%;
+    }
+    #app-page header h1 {
+        font-size: 22pt;
+        width: 100%;
+    }
+    #app-page main {
+        --header-height: calc(1rem + 1rem + 22pt + 1px);
+    }
+}

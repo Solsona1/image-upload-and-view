@@ -1,0 +1,15 @@
+.error-modal {
+    border: 1px solid var(--error);
+}
+
+.error-modal h2 {   
+    color: var(--error);
+}
+
+.success-modal {
+    border: 1px solid var(--success);
+}
+
+.success-modal h2 {
+    color: var(--success);
+}

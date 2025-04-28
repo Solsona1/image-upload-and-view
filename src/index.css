@@ -1,0 +1,62 @@
+:root {
+  --accent-color: #1976D2;
+  --background: #FFFFFF;
+  --darker-background: #F0F0F0;
+  --elements: #A9A9A9;
+  --text: #696969;
+  --dark-text: #363636;
+  --error: #FF4500;
+  --success: #04B34F;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--dark-text);
+  font-size: 12pt;
+  overflow: hidden;
+}
+
+button {
+  font-size: inherit;
+  border-radius: 5px;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--background);
+}
+
+/* Tablets */
+@media(min-width: 768px) {
+  body {
+    font-size: 15pt;
+  }
+}
+
+/* Notebooks */
+@media(min-width: 1366px) {
+  body {
+    font-size: 16pt;
+  }
+  button {
+    cursor: pointer;
+  }
+}
+
+/* Desktops */
+@media(min-width: 1920px) {
+  body {
+    font-size: 18pt;
+  }
+  button {
+    cursor: pointer;
+  }
+}

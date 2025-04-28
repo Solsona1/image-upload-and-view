@@ -24,10 +24,6 @@
     font-size: 16pt;
 }
 
-#app-page header #logout-btn {
-    padding: 0.25rem 0.5rem;
-}
-
 /* Tablets */
 @media(min-width: 768px) {
     #app-page header h1 {

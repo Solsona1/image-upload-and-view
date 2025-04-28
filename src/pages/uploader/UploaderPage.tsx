@@ -38,11 +38,11 @@ export const UploaderPage = () => {
             await supabaseManager.uploadFiles(images.map(img => img.file));
             setImages([]);
             setIsSuccess(true);
+            navigate("/");
         } catch (error) {
             setIsError(true);
         }
         setUploading(false);
-        navigate("/");
     };
 
     const handleDelete = (id: string) => {

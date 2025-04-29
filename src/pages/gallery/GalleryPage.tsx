@@ -12,7 +12,7 @@ export const GalleryPage = () => {
 
     useEffect(() => {
         setRetrievedImages(loaderData);
-    }, [loaderData]);
+    }, []);
     
     return (
         <div id="gallery-page">
@@ -35,6 +35,7 @@ export const GalleryPage = () => {
                     id="open-uploader-btn" 
                     type="button" 
                     onClick={() => navigate("/uploader")}
+                    className="addHoverEffect"
                 >
                     Add new photos
                 </button>

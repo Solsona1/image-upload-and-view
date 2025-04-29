@@ -33,23 +33,20 @@
 /* Tablets */
 @media(min-width: 768px) {
     .thumbnail {
-        width: 30%;
-        height: 40%;
+        width: 18%;
     }
 }
 
 /* Notebooks */
 @media(min-width: 1366px) {
     .thumbnail {
-        width: 30%;
-        height: 40%;
+        width: 18%;
     }
 }
 
 /* Desktops */
 @media(min-width: 1920px) {
     .thumbnail {
-        width: 24%;
-        height: 30%;
+        width: 18%;
     }
 }

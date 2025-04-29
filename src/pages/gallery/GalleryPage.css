@@ -33,37 +33,29 @@
 
 /* Tablets */
 @media(min-width: 768px) {
+    #gallery-page #gallery{
+        justify-content: center;
+    }
 }
 
 /* Notebooks */
 @media(min-width: 1366px) {
-    #gallery-page {
-        overflow: auto;
+    #gallery-page #gallery {
+        justify-content: center;
     }
     #gallery-page #new-upload-btn {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-    }
-    #gallery-page #gallery {
-        height: 100%;
-        overflow: initial;
+        width: fit-content;
+        margin-right: 3rem;
     }
 }
 
 /* Desktops */
 @media(min-width: 1920px) {
-    #gallery-page {
-        overflow: auto;
+    #gallery-page #gallery {
+        justify-content: center;
     }
     #gallery-page #new-upload-btn {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    #gallery-page #gallery {
-        height: 100%;
-        overflow: initial;
+        margin-right: 3rem;
+        width: fit-content;
     }
 }

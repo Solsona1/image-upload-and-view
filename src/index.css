@@ -49,6 +49,10 @@ button {
   button {
     cursor: pointer;
   }
+  .addHoverEffect:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+  }
 }
 
 /* Desktops */
@@ -58,5 +62,9 @@ button {
   }
   button {
     cursor: pointer;
+  }
+  .addHoverEffect:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
   }
 }

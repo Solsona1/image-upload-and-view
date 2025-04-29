@@ -77,6 +77,7 @@ export const UploaderPage = () => {
                     type="button"
                     onClick={() => setIsDialogOpen(true)}
                     disabled={images.length === 0}
+                    className="addHoverEffect"
                 >
                     Upload
                 </button>

@@ -125,6 +125,14 @@
 
 /* Notebooks */
 @media(min-width: 1366px) {
+    #uploader-page .images-container {
+        justify-content: flex-start;
+    }
+
+    #uploader-page .images-container .thumbnail {
+        height: 40%;
+    }
+
     #uploader-page .upload-btn {
         font-size: 20pt;
     }
@@ -154,6 +162,14 @@
 
 /* Desktops */
 @media(min-width: 1920px) {
+    #uploader-page .images-container {
+        justify-content: flex-start;
+    }
+
+    #uploader-page .images-container .thumbnail {
+        height: 40%;
+    }
+
     #uploader-page .upload-btn {
         font-size: 22pt;
     }

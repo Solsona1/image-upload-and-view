@@ -15,7 +15,7 @@ export class SupabaseBucketManager {
         .upload(`public/${file.name}`, file);
 
         if(error) {
-            console.error(error);
+            console.error(error.message);
             throw error;
         } else {
             return data;
@@ -42,6 +42,10 @@ export class SupabaseBucketManager {
 
         if(error1) {
             throw error1;
+        }
+
+        if(files.length === 0) {
+            return [];
         }
         
         const { data, error } = await supabase.storage

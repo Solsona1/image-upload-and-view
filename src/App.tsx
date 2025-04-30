@@ -4,6 +4,7 @@ import { UploaderPage } from './pages/uploader/UploaderPage'
 import { GalleryPage } from './pages/gallery/GalleryPage'
 import { ImagesLoaderFunction } from './pages/gallery/GalleryPage'
 import { LoadingPage } from './pages/loading/LoadingPage'
+
 function App() {
   const router = createBrowserRouter([
     { path: "/", element: <Layout/>, children: [

@@ -27,7 +27,7 @@ export const GalleryPage = () => {
                                 onDelete={() => {}}
                             />
                         )
-                    : null
+                    : <p>No images found! Upload some images pressing the button below</p>
                 }
             </div>
             <div id="new-upload-btn">

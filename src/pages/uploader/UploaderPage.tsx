@@ -7,6 +7,7 @@ import { LoadingDialog } from "../../components/dialogs/loading-dialog/LoadingDi
 import { SuccessErrorDialog } from "../../components/dialogs/success-error-dialog/SuccessErrorDialog";
 import { LoadedImage } from "../../types/Image";
 import { useNavigate } from "react-router";
+import { compressImage } from "../../utils/ImageCompression";
 
 export const UploaderPage = () => {
     const navigate = useNavigate();
@@ -19,15 +20,17 @@ export const UploaderPage = () => {
 
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const files = Array.from(event.target.files || []);
-        const newImages = files.map((file, index) => {
+        Promise.all(files.map(async (file, index) => {
             const url = URL.createObjectURL(file);
+            const compressedFile = await compressImage(file);
             return {
                 id: index.toString(),
                 url: url,
-                file: file
+                file: compressedFile
             }
+        })).then(newImages => {
+            setImages([...images, ...newImages]);
         });
-        setImages([...images, ...newImages]);
     };
 
     const handleUpload = async () => {
